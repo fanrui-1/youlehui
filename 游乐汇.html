@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京游乐汇</title>
+
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* 网页最上端 */
+.header {
+  background-color: #7BA7AB;
+  padding: 1px;
+  text-align: center;
+}
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fffafa;
+            font-weight: 500;
+            font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+        }
+
+        #container {
+            width:auto;
+            height:auto;
+            margin:auto;
+        }
+        div.search {padding: 10px 0;}
+
+        form {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        /*搜索框7*/
+        .bar7 {background: #7BA7AB;}
+        .bar7 form {
+            height: 42px;
+        }
+        .bar7 input {
+            width: 250px;
+            border-radius: 42px;
+            border: 2px solid #324B4E;
+            background: #F9F0DA;
+            transition: .3s linear;
+            float: right;
+        }
+        .bar7 input:focus {
+            width: 300px;
+        }
+        .bar7 button {
+            background: none;
+            top: -2px;
+            right: 0;
+        }
+        .bar7 button:before{
+          content: "\f002";
+          font-family: FontAwesome;
+          color: #324b4e;
+        }
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* 创建两列 */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}  
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 创建三个不相等的列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* 左右两侧宽度 */
+.column.side {
+  width: 10%;
+}
+
+/* 中间区域宽度 */
+.column.middle {
+  width: 70%;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 宽度小于600px时设置上下布局 */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+<div class="header">
+  <h2>机票网页汇总</h2>
+    <div class="search bar7">
+        <form target="_blank" method="get" action="https://www.baidu.com/s">
+            <input type="text" placeholder="请输入您要搜索的内容..."name="word" class="text" />
+            <button type="submit"></button>
+        </form>
+    </div>
+</div>
+<!--导航栏-->
+<div class="topnav">
+  <a href="#GW">官网</a>
+  <a href="#OTA">OTA</a>
+  <a href="#QT">其他网址</a>
+  <a href="#D1">平台电话</a>
+  <a href="#D2">航司电话</a>
+  <a href="#DB" style="float:right">底部</a>
+</div>
+
+<!--左侧内容栏-->
+<div class="row">
+  <div class="column side">
+    <h2><a id="GW">航司官网</a></h2>
+    <p>国航系</p>
+    <p>东航系</p>
+    <p>南航系</p>
+    <p>海航系</p>
+    <p>川航系</p>
+    <p>民营</p>
+<h3><a id="OTA">OTA平台</a></h3>
+<h3><a id="QT">后台</a></h3>
+<h3>B平台</h3>
+<h3>其他网址</h3>
+<h3><a id="D1">平台电话</a></h3>
+ <br>
+ <br>
+ <br>
+ <br>
+<h3><a id="D2">航司电话</a></h3>
+  </div>
+  
+  <div class="column middle">
+
+
+<!--右侧内容栏-->
+    <h2>网址</h2>
+    <p>
+<a href="http://www.airchina.com.cn/"target="_blank">国航CA</a>
+<a href="https://www.sda.cn/"target="_blank">山航SC</a>
+<a href="https://www.qdairlines.com/index"target="_blank">青岛QW</a>
+<a href="https://www.shenzhenair.com/szair_B2C/"target="_blank">深航ZH</a>
+<a href="https://www.airkunming.com/"target="_blank">昆明KY</a>
+<a href="https://www.tibetairlines.com.cn/"target="_blank">西藏TV</a>
+</p>
+
+    <p>
+<a href="http://www.ceair.com/"target="_blank">东航MU</a>
+<a href="http://www.flycua.com/"target="_blank">联航KN</a>
+<a href="http://www.joy-air.com/"target="_blank">幸福JR</a>
+</p>
+    <p>
+<a href="https://www.csair.com/cn/"target="_blank">南航CZ</a>
+<a href="https://www.xiamenair.com/"target="_blank">厦航MF</a>
+<a href="https://www.hbhk.com.cn/"target="_blank">河北NS</a>
+<a href="http://www.airjiangxi.com/jiangxiair/v2/index.action"target="_blank">江西RY</a>
+</p>
+    <p><a href="https://www.hnair.com/"target="_blank">海航HU</a>
+<a href="https://www.jdair.net/"target="_blank">首都JD</a>
+<a href="https://www.tianjin-air.com/"target="_blank">天津GS</a>
+<a href="https://www.westair.cn/"target="_blank">西部PN</a>
+<a href="https://www.luckyair.net/"target="_blank">祥鹏8L</a>
+<a href="https://www.fuzhou-air.cn/"target="_blank">福州FU</a>
+<a href="http://www.airchangan.com/portal"target="_blank">长安9H</a>
+<a href="https://www.airguilin.com/"target="_blank">桂林GT</a>
+<a href="http://www.gxairlines.com/"target="_blank">北部湾GX</a>
+<a href="http://www.urumqi-air.com/"target="_blank">扬子江Y8</a>
+<a href="http://www.urumqi-air.com/"target="_blank">乌鲁木齐UQ</a>
+</p>
+    <p><a href="https://www.sichuanair.com/"target="_blank">川航3U</a>
+<a href="https://www.cdal.com.cn/"target="_blank">成都EU</a>
+</p>
+    <p><a href="https://www.ch.com/"target="_blank">春秋9C</a>
+<a href="http://www.juneyaoair.com/"target="_blank">吉祥HO</a>
+<a href="https://www.loongair.cn/#/web/home"target="_blank">长龙GJ</a>
+<a href="http://www.9air.com/zh-CN"target="_blank">九元AQ</a>
+<a href="https://www.donghaiair.com/"target="_blank">东海DZ</a>
+<a href="http://www.longjianghk.com/"target="_blank">龙江LT</a>
+<a href="https://www.tianjiao-air.com/"target="_blank">天骄9D</a>
+<a href="https://www.okair.net/"target="_blank">奥凯BK</a>
+<a href="https://www.chinaexpressair.com/"target="_blank">华夏G5</a>
+<a href="https://www.redair.cn/"target="_blank">湖南A6</a>
+<a href="https://www.rlair.net/"target="_blank">瑞丽DR</a>
+<a href="http://www.yinganair.cn/"target="_blank">英安YI</a>
+<a href="https://www.cgzair.com/yss/login"target="_blank">多彩贵州GY</a>
+</p>
+    <h3><a href="https://www.ctrip.com/"target="_blank">携程</a>
+<a href="https://www.qunar.com/"target="_blank">去哪儿</a>
+<a href="https://www.ly.com/"target="_blank">同程</a>
+<a href="https://www.fliggy.com/"target="_blank">飞猪</a>
+</h3>
+    <h3><a href="http://www.csbx.cc:6969/welcome"target="_blank">游乐汇</a>
+<a href="http://csxyunlvhk.qlv88.com/"target="_blank">强旅</a>
+<a href="https://supplier.tieyou.com/order/exce/list"target="_blank">智行后台</a>
+<a href="http://tbooking.ctrip.com/ntbooking/ntpage/login"target="_blank">携程后台</a>
+<a href="http://jpebook.ly.com/suppliersharing"target="_blank">同程后台</a>
+<a href="https://user.qunar.com/passport/login.jsp?ret=http%3A%2F%2Ffuwu.qunar.com%2Fuserpass/clean"target="_blank">去哪儿后台</a>
+<a href="https://saas.flight.fliggy.com/common/index#/"target="_blank">淘宝后台</a>
+<a href="https://flight-agent.meituan.com/#/login"target="_blank">美团后台</a>
+<a href="https://fuwu.jiulvxing.com"target="_blank">就旅行后台</a>
+<a href="http://www.71fy.com/Home/Default"target="_blank">扶摇</a>
+<a href="http://po.feeye.com/index.action"target="_blank">飞耶</a>
+</h3>
+    <h3><a href="http://fwwnsl.51taopiao.cn/uipage/login/index"target="_blank">蜗牛分销</a>
+<a href="https://dms.huoli.com/merchant/#/login"target="_blank">航班管家</a>
+<a href="https://www.etravelb2b.com/index"target="_blank">易旅行</a>
+<a href="http://www.51book.com/"target="_blank">51book</a>
+<a href="https://www.yinzhilv.com/login"target="_blank">胤之旅</a>
+<a href="https://user.jiulvxing.com/ucenter/www/login?ret=https%3A%2F%2Ffuwu.jiulvxing.com%2Fuserpass%2Fclean%3F"target="_blank">大众采购(就旅行)</a>
+<a href="http://www.8000yi.com"target="_blank">八千翼</a>
+<a href="http://www.517na.com/"target="_blank">517</a>
+<a href="http://www.lianhe800.com/"target="_blank">联合800</a>
+<a href="https://www.jinri.net/login.aspx"target="_blank">今通</a>
+</h3>
+    <h3><a href="https://order.flight.qunar.com/fwpview/purchaser/agentSelfHelpOperate
+ "target="_blank">去哪儿大客户</a>
+<a href="http://175.178.107.97/index.php"target="_blank">同程大胃王</a>
+<a href="https://flights.ctrip.com/actualtime/search?newpchpheader=1"target="_blank">航班动态</a>
+<a href="http://travel.ceair.com/log_f.do"target="_blank">东航B2T</a>
+<a href="http://kegui.itoubao.net/dm/Prescribe/guiding.html?Airways=&d=Z33kTuNuTE33bmEuY29t"target="_blank">退改签规定1</a>
+<a href="http://buyer.jinri.cn/html/RefundRiseCabinStipulate.html"target="_blank">退改签规定2</a>
+</h3>
+  <p>XC 携程 95010</p>
+  <p>QN 去哪儿 95117</p>
+  <p>TC 同程 95711/4001107777/4007777777</p>
+  <p>FZ 飞猪 9510208/4001688688</p>
+<!--分割线-->
+<HR align=left width=300 color=#987cb9 SIZE=1>
+
+  <p>CA	中国国际航空 95583</p>
+  <p>MU	东方航空/上海航空 95530</p>
+  <p>CZ	南方航空/重庆航空 95539/4008695539</p>
+  <p>HU	海南航空/大新华航空 95339</p>
+  <p>JD	首都航空 95375</p>
+  <p>GS	天津航空 95350</p>
+  <p>PN	西部航空 95373</p>
+  <p>8L	祥鹏航空	95326</p>
+  <p>FU	福州航空	95071666</p>
+  <p>9H	长安航空	95071199</p>
+  <p>GT	桂林航空	9507101</p>
+  <p>GX	北部湾航空	95370</p>
+  <p>UQ	乌鲁木齐航空	95334</p>
+  <p>Y8	扬子江航空/金鹏航空	950719</p>
+  <p>SC	山东航空	95369</p>
+  <p>MF	厦门航空	95557</p>
+  <p>3U	四川航空	95378</p>
+  <p>ZH	深圳航空	95361</p>
+  <p>HO	吉祥航空	95520</p>
+  <p>KY	昆明航空	0871-96598</p>
+  <p>NS	河北航空	0311-96699</p>
+  <p>GJ	长龙航空	956199</p>
+  <p>QW	青岛航空	0532-96630</p>
+  <p>DZ	东海航空	4000888666</p>
+  <p>LT	龙江航空	0451-81181111</p>
+  <p>9D	天骄航空	0471-96175</p>
+  <p>KN	中国联合航空	4001026666</p>
+  <p>9C	春秋航空	95524</p>
+  <p>BK	奥凯航空	95307</p>
+  <p>G5	华夏航空	4006006633</p>
+  <p>TV	西藏航空	956096</p>
+  <p>JR	幸福航空	4008680000</p>
+  <p>EU	成都航空	028-66668888</p>
+  <p>GY	多彩贵州航空	8519610077</p>
+  <p>RY	江西航空	79196300</p>
+  <p>A6	湖南航空	4008337777</p>
+  <p>DR	瑞丽航空	0871-952801</p>
+  <p>AQ	九元航空	4001051999</p>
+  <p>YI	英安航空	87167116038</p>
+<h3><a id="DB">感谢使用</a></h3>
+  </div>
+  
+  <div class="column side">
+    <h2>备注</h2>
+  <p>如有遗漏或补充</p>
+  <p>请联系向繁睿</p>
+
+  </div>
+
+</div>
+</body>
+</html>
